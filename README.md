@@ -294,7 +294,7 @@ to the dependency container.
 We have provided 2 factories for you to use, though any function that matches the `FactoryFunction<T>` signature
 can be used as a factory:
 ```typescript
-type FactoryFunction<T> = (dependencyContainer: DependencyContainer) => T;
+type FactoryFunction<T> = (dependencyContainer: DependencyContainer) => Promise<T>;
 ```
 
 ##### instanceCachingFactory
